@@ -2596,9 +2596,8 @@ input, select, textarea {
 		background-image: url("../../images/bg.webp");
 		background-position: top left;
 		background-repeat: no-repeat;
-		background-size: 120%;
-		color: rgba(255, 255, 255, 0.5);
-		height: 100%;
+		background-size: cover;
+		height: 100vh;
 		left: 0;
 		padding: 8em 4em;
 		position: fixed;
