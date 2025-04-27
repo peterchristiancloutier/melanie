@@ -286,6 +286,16 @@
 			.popup-link {
 				cursor: pointer;
 			}
+			/* Add success state animation */
+			input[type="submit"].success {
+				background: linear-gradient(45deg, #4CAF50, #45a049) !important;
+				border-color: #4CAF50 !important;
+				transition: background 0.5s ease, border-color 0.5s ease !important;
+			}
+			
+			input[type="submit"] {
+				transition: background 0.5s ease, border-color 0.5s ease !important;
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -816,6 +826,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script>
 				var form = document.getElementById("contact-form");
 				var formStatus = document.getElementById("form-status");
+				var submitButton = document.querySelector('input[type="submit"]');
 				
 				async function handleSubmit(event) {
 					event.preventDefault();
@@ -832,6 +843,14 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						});
 						
 						if (response.ok) {
+							// Add success class to button
+							submitButton.classList.add('success');
+							
+							// Remove success class after 3 seconds
+							setTimeout(() => {
+								submitButton.classList.remove('success');
+							}, 3000);
+							
 							status.innerHTML = "Thank you for your wish! It'll be answered soon ✨";
 							form.reset();
 						} else {
