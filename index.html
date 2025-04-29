@@ -58,8 +58,8 @@
 			.typing-text {
 				visibility: visible;
 				white-space: pre;
-				background: rgba(0, 0, 0, 0.4);
-				backdrop-filter: blur(8px);
+				background: rgba(0, 0, 0, 0.3);
+				backdrop-filter: blur(2px);
 				padding: 1em;
 				border-radius: 8px;
 				display: inline-block;
@@ -203,11 +203,13 @@
 				color: #444444;
 			}
 			#header {
-				background-image: url('images/bg4.webp');
-				background-position: bottom left;
-				background-size: 50%;
+				background-image: url('images/bg5.png');
+				background-position: top left;
+				background-size: 150% 120%;
 				background-attachment: fixed;
 				padding-bottom: 0;
+				image-rendering: -webkit-optimize-contrast;
+				image-rendering: crisp-edges;
 			}
 			#header .inner {
 				position: relative;
@@ -220,9 +222,9 @@
 					margin-top: 0;
 				}
 				#header {
-					background-position: center;
+					background-position: top left;
 					background-attachment: scroll;
-					background-size: 200%;
+					background-size: 150% 120%;
 				}
 				#header .inner {
 					display: flex;
