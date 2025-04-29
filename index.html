@@ -61,13 +61,11 @@
 				border-radius: 8px;
 				display: inline-block;
 				margin: 1em 0;
-				box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
 				text-align: center;
-				transition: transform 0.3s ease, box-shadow 0.3s ease;
+				transition: transform 0.3s ease;
 			}
 			.typing-text:hover {
 				transform: translateY(-5px);
-				box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 			}
 			.typing-text span {
 				opacity: 0;
@@ -203,9 +201,12 @@
 			}
 			#header {
 				background-position: center;
-				background-size: 85%;
+				background-size: 60%;
 				background-attachment: fixed;
 				padding-bottom: 0;
+			}
+			#header .inner {
+				position: relative;
 			}
 			#main {
 				margin-top: -5em;
@@ -235,12 +236,10 @@
 				}
 			}
 			#header .image.avatar img {
-				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-				transition: transform 0.3s ease, box-shadow 0.3s ease;
+				transition: transform 0.3s ease;
 			}
 			#header .image.avatar img:hover {
 				transform: translateY(-5px);
-				box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 			}
 			/* Popup styles */
 			.popup {
@@ -314,10 +313,9 @@
 				<!-- One -->
 					<section id="one">
 						<header class="major">
-							<h2><img src="images/THE WISHING TREE LOGO.png" alt="THE WISHING TREE" style="max-width: 100%; height: auto; margin-bottom: -0.8em;"><br />
-							<span style="color: #dfb855ff; line-height: 0.6;">Wishes You Can Wear</span></h2>
+							<h2><img src="images/twtlogofinal.webp" alt="The Wishing Tree" style="max-width: 80%; height: auto; margin-bottom: -1em;"><br /></h2>
 						</header>
-						<p>Welcome to THE WISHING TREE, a joyful collection of my handmade jewelry, where each piece is crafted with love, imagination, and a touch of magic. I started THE WISHING TREE as a way to share my wish: that every piece brings a little joy to its wearer, blending organic simplicity with decadent detail. My pieces are designed to make women all ages feel radiant, uniquely themselves, and always a little bit enchanted. You deserve to know wishes come true!</p>
+						<p style="margin-top: -0.5em;">Welcome to The Wishing Tree, a joyful collection of my handmade jewelry, where each piece is crafted with love, imagination, and a touch of magic. I started The Wishing Tree as a way to share my wish: that every piece brings a little joy to its wearer, blending organic simplicity with decadent detail. My pieces are designed to make women all ages feel radiant, uniquely themselves, and always a little bit enchanted. You deserve to know wishes come true!</p>
 						<ul class="actions">
 							<li><a href="#about-popup" class="button popup-link">Learn More</a></li>
 						</ul>
@@ -327,7 +325,7 @@
 					<div id="about-popup" class="popup">
 						<div class="popup-content">
 							<span class="popup-close icon solid fa-times"></span>
-							<p>I was raised in Belmont, California and started THE WISHING TREE while attending Santa Clara University.</p>
+							<p>I was raised in Belmont, California and started The Wishing Tree while attending Santa Clara University.</p>
 						</div>
 					</div>
 
@@ -371,7 +369,7 @@
 				<!-- Three -->
 					<section id="three">
 						<h2>Get In Touch</h2>
-						<p>Whether you're a fellow jewelry lover or a boutique owner, I'd love to hear from you. THE WISHING TREE can be found in charming boutiques all over the Bay Area—if you're interested in carrying our line, please leave an inquiry below and I'll be in touch soon!</p>
+						<p>Whether you're a fellow jewelry lover or a boutique owner, I'd love to hear from you. The Wishing Tree can be found in charming boutiques all over the Bay Area—if you're interested in carrying our line, please leave an inquiry below and I'll be in touch soon!</p>
 						<div class="row">
 							<div class="col-8 col-12-small">
 								<form method="POST" action="https://formspree.io/f/mzzenprr" id="contact-form">
@@ -749,7 +747,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<!-- Typing animation -->
 			<script>
 				document.addEventListener('DOMContentLoaded', function() {
-					const text = 'Hi! I\'m Melanie Cloutier\nOwner & Designer\n@ THE WISHING TREE';
+					const text = 'Hi! I\'m Melanie Cloutier\nOwner & Designer\n@ The Wishing Tree';
 					const typingElement = document.querySelector('.typing-text');
 					
 					// First line should be bold
