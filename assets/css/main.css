@@ -3204,12 +3204,16 @@ input, select, textarea {
 
 			#header {
 				padding: 4.5em 1.5em;
-				background-size: 400%;
+				background-size: 200%;
 				background-position: center center;
 			}
 
 				#header h1 br {
 					display: none;
+				}
+
+				#header h2 img {
+					max-width: 95%;
 				}
 
 		/* Footer */
