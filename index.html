@@ -464,6 +464,15 @@
 				border-bottom: 2px solid #dfb855ff !important;
 				box-shadow: none !important;
 			}
+			/* Mobile-specific background image and properties */
+			@media screen and (max-width: 736px) {
+				#header {
+					background-image: url('images/bg6mobile.webp');
+					background-size: cover;
+					background-attachment: scroll; /* Better performance on mobile */
+					background-position: center center;
+				}
+			}
 		</style>
 	</head>
 	<body class="is-preload">
