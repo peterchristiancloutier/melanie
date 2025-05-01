@@ -150,18 +150,22 @@
 			.button.primary {
 				background-color: #dfb855ff !important;
 				border-color: #dfb855ff !important;
+				color: #ffffff !important;
 			}
 			.button.primary:hover {
 				background-color: #dfb855ff !important;
 				border-color: #dfb855ff !important;
+				color: #ffffff !important;
 			}
 			input[type="submit"].primary {
 				background-color: #dfb855ff !important;
 				border-color: #dfb855ff !important;
+				color: #ffffff !important;
 			}
 			input[type="submit"].primary:hover {
 				background-color: #dfb855ff !important;
 				border-color: #dfb855ff !important;
+				color: #ffffff !important;
 			}
 			#one p,
 			#two h2,
@@ -342,6 +346,28 @@
 					transform: translateY(0);
 				}
 			}
+			.scroll-arrow {
+				display: none;
+				position: absolute;
+				bottom: 2em;
+				left: 50%;
+				transform: translateX(-50%);
+				color: #dfb855ff;
+				font-size: 2em;
+				animation: float 2s ease-in-out infinite;
+				text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+				z-index: 2;
+			}
+			@keyframes float {
+				0% { transform: translateX(-50%) translateY(0); }
+				50% { transform: translateX(-50%) translateY(-10px); }
+				100% { transform: translateX(-50%) translateY(0); }
+			}
+			@media screen and (max-width: 768px) {
+				.scroll-arrow {
+					display: block;
+				}
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -355,6 +381,9 @@
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
 					<h1 class="typing-text"></h1>
+					<div class="scroll-arrow">
+						<i class="icon solid fa-chevron-down"></i>
+					</div>
 				</div>
 			</header>
 
@@ -384,7 +413,7 @@
 					<section id="two">
 						<div class="row" style="margin-top: -1em; margin-bottom: 2em;">
 							<div class="col-12" style="text-align: left;">
-								<ul class="actions" style="display: inline-flex; gap: 1em; margin-left: 0; padding-left: 0;">
+								<ul class="actions" style="display: inline-flex; gap: 1em; margin-left: 0; padding-left: 0; flex-wrap: nowrap;">
 									<li><a href="#" class="button primary small" data-filter="all">All</a></li>
 									<li><a href="#" class="button small" data-filter="earrings">Earrings</a></li>
 									<li><a href="#" class="button small" data-filter="cuffs">Cuffs</a></li>
